@@ -18,7 +18,129 @@ STEP 4:Apply the various data visualization tools wherever necessary.
 STEP 5:Include Necessary parameters in each functions.
 
 # Coding and Output:
- Include the necessary coding and corresponding screenshots
 
+Name:Janani Gowrisankar
+Register Number:212224100022
+
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Line Plot:
+```
+marks=[13,45,63,78]
+student=['ABC','QOR','EFB','TOB']
+plt.plot(marks,student)
+plt.xlabel('Marks')
+plt.ylabel('Student name')
+plt.show()
+```
+<img width="809" height="597" alt="image" src="https://github.com/user-attachments/assets/5780832e-4b98-4ebe-ac9b-a4f018be11b8" />
+
+```
+ student=['A','B','C','D']
+ attendence=[90,85,73,88]
+ plt.plot(attendence,student)
+ plt.xlabel('Attendence')
+ plt.ylabel('Student name')
+ plt.show()
+```
+<img width="803" height="594" alt="image" src="https://github.com/user-attachments/assets/374610d0-e6bb-4524-aff5-f483b2272540" />
+
+ # Scatter Plot:
+
+ ```
+ x=[10,20,30,40,50]
+ y=[100,200,300,400,500]
+ plt.scatter(x,y,label='stars',color='green',marker='*',s=30)
+ plt.show()
+ ```
+<img width="772" height="579" alt="image" src="https://github.com/user-attachments/assets/f3aeeea4-3147-4661-9f1b-f6c232e453ab" />
+
+```
+ x=[10,20,30,40,50]
+ y=[100,200,300,400,500]
+ plt.scatter(x,y,label='stars',color='green',marker='*',s=30)
+ plt.show()
+```
+<img width="812" height="639" alt="image" src="https://github.com/user-attachments/assets/8ab43ea9-c00f-45df-b48a-91403bb22fe4" />
+
+ # Pie Chart:
+ ```
+act=['eat','sleep','work','play']
+slices=[3,7,8,6]
+color=['r','y','g','b']
+plt.pie(slices,labels=act,colors=color,startangle=90,shadow=True,explode=(0.1,0.1,0.1,0.1),radius=1.2,autopct='%1.1f%%')
+plt.legend()
+plt.show()
+```
+<img width="797" height="586" alt="image" src="https://github.com/user-attachments/assets/acdc1127-1cda-47ee-9994-c3d953ddea55" />
+
+```
+feedback=['Good','excellent','Perfect','Ok']
+slices=[4,10,3,8]
+color=['y','r','b','g']
+plt.pie(slices,labels=feedback,colors=color,startangle=90,shadow=True,explode=(0.1,0.1,0.1,0.1),radius=1.2,autopct='%1.1f%%')
+plt.legend()
+plt.show()
+```
+<img width="713" height="569" alt="image" src="https://github.com/user-attachments/assets/b716489b-9af2-447b-ab24-74e2f19139dc" />
+
+ # Area Chart:
+ ```
+x = [1, 2, 3, 4, 5]
+y1 = [10, 12, 14, 16, 18]
+y2 = [5, 7, 9, 11, 13]
+y3 = [2, 4, 6, 8, 10]
+plt.fill_between(x, y1, color='blue')
+plt.fill_between(x, y2, color='green')
+plt.plot(x, y1, color='red')
+plt.plot(x, y2, color='black')
+plt.legend(['y1','y2'])
+plt.show()
+```
+<img width="778" height="608" alt="image" src="https://github.com/user-attachments/assets/aabde610-bc86-43a2-8dba-a5fc290b13d0" />
+
+ # Bar Chart:
+ ```
+height = [10, 24, 36, 40, 5]
+names = ['one', 'two', 'three', 'four', 'five']
+c1=['red', 'green'] 
+c2=['b', 'g']
+plt.bar (names, height, width=0.8, color=c1)
+plt.xlabel('x - axis')
+plt.ylabel('y - axis')
+plt.title('My bar chart!')
+plt.show()
+```
+<img width="782" height="653" alt="image" src="https://github.com/user-attachments/assets/e6907bc6-b3b3-485a-8c94-cb755b779439" />
+
+
+ # Histogram:
+ ```
+ x = [2,1,6,4,2,4,8,9,4,2,4,10,6,4,5,7,7,3,2,7,5,3,5,9,2,1]
+ plt.hist(x, bins = 10, color='blue', alpha=0.5)
+ plt.show()
+```
+<img width="777" height="606" alt="image" src="https://github.com/user-attachments/assets/e6588934-96a8-4d69-81ba-c96c0e4776c3" />
+
+ # Box Plot:
+```
+ np.random.seed(0)
+ data=np.random.normal(loc=0, scale=1, size=100)
+ data
+```
+<img width="836" height="502" alt="image" src="https://github.com/user-attachments/assets/ce83b9af-0327-4ffc-9298-f7658f988c8d" />
+
+```
+ fig, ax= plt.subplots()
+ ax.boxplot(data)
+ ax.set_xlabel('Data')
+ ax.set_ylabel('Values')
+ ax.set_title('Box Plot')
+```
+<img width="780" height="654" alt="image" src="https://github.com/user-attachments/assets/0346df59-92a1-40ea-9f2e-f19818b37e2e" />
+ 
 # Result:
- Include your result here
+ Thus, all the data visualization techniques of matplotlib has been implemented.
